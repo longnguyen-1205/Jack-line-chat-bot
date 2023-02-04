@@ -16,13 +16,17 @@ const config_gg = {
 
 
 
-cron.schedule('* * 8 * * *', () => {
-  daily();
+cron.schedule('* 58 1 * * *', () => {
+  //daily();
+  test();
 }, {
   scheduled: true,
   timezone: "Asia/Tokyo"
 });
-
+ 
+async function test(){
+  console.log("a");
+}
 
 
 async function daily() {
