@@ -1,0 +1,662 @@
+{
+    "type": "carousel",
+    "contents": [
+      {
+        "type": "bubble",
+        "header": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "2023/02/01",
+              "align": "center",
+              "color": "#FFFFFF",
+              "weight": "bold",
+              "size": "xxl"
+            }
+          ],
+          "backgroundColor": "#74FF33"
+        },
+        "hero": {
+          "type": "image",
+          "url": "https://storage.googleapis.com/line-chatbot-375411.appspot.com/weather-img/img108.png",
+          "size": "full",
+          "aspectRatio": "20:13",
+          "action": {
+            "type": "postback",
+            "label": "action",
+            "data": "hello"
+          },
+          "margin": "none",
+          "align": "center"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "福岡地方",
+              "weight": "bold",
+              "size": "xl"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "margin": "lg",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "天気:",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 1
+                    },
+                    {
+                      "type": "text",
+                      "text": "くもり　夜　晴れ",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "気温:",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 1
+                    },
+                    {
+                      "type": "text",
+                      "text": "3.7 -> 10.5(°C)",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "　風:",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 1,
+                      "align": "start"
+                    },
+                    {
+                      "type": "text",
+                      "text": "西の風　後　北の風　海上　では　西の風　やや強く",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "　波:",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 1
+                    },
+                    {
+                      "type": "text",
+                      "text": "２メートル　後　２．５メートル",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://storage.googleapis.com/line-chatbot-375411.appspot.com/weather-img/weather_icon.jpg"
+            }
+          ]
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "sm",
+          "contents": [
+            {
+              "type": "filler"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "Have a nice day!",
+                  "size": "xxl",
+                  "align": "center"
+                }
+              ],
+              "margin": "sm"
+            }
+          ],
+          "flex": 0
+        },
+        "styles": {
+          "header": {
+            "separator": true
+          }
+        }
+      },
+      {
+        "type": "bubble",
+        "header": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "今日の運勢",
+              "align": "center",
+              "size": "xxl",
+              "color": "#5656d8",
+              "weight": "bold"
+            }
+          ],
+          "backgroundColor": "#a1aced"
+        },
+        "hero": {
+          "type": "image",
+          "url": "https://image.uranai.jp/package/LRP000000051/image_webp/09_ite.webp",
+          "size": "full",
+          "aspectRatio": "20:13",
+          "action": {
+            "type": "postback",
+            "label": "action",
+            "data": "hello"
+          },
+          "margin": "none",
+          "align": "center"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "大吉",
+                  "weight": "bold",
+                  "size": "xl",
+                  "align": "center",
+                  "color": "#ffffff"
+                }
+              ],
+              "backgroundColor": "#ed446e"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "margin": "lg",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "xs",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "金運:",
+                      "color": "#aaaaaa",
+                      "flex": 1
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+                    },
+                    {
+                      "type": "text",
+                      "text": "5",
+                      "flex": 3,
+                      "color": "#a9a9a9"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "xs",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "仕事:",
+                      "color": "#aaaaaa",
+                      "flex": 1
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "text",
+                      "text": "5",
+                      "flex": 3,
+                      "color": "#a9a9a9"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "xs",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "恋愛:",
+                      "color": "#aaaaaa",
+                      "flex": 1
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "icon",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                    },
+                    {
+                      "type": "text",
+                      "text": "5",
+                      "flex": 3,
+                      "color": "#a9a9a9"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "内容:",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 1
+                    },
+                    {
+                      "type": "text",
+                      "text": "義理や人情に囚われていると自分の居場所を無くし、苦労に終わりがありません。適度な要領のよさを持つことが必要です。",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": "ラッキー物",
+                  "weight": "bold",
+                  "align": "center",
+                  "color": "#46c42d"
+                },
+                {
+                  "type": "box",
+                  "layout": "horizontal",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "アイテム",
+                      "color": "#fc2f2f"
+                    },
+                    {
+                      "type": "text",
+                      "text": "カラー",
+                      "color": "#c9c90c"
+                    },
+                    {
+                      "type": "text",
+                      "text": "星座名",
+                      "color": "#4ca5ff"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "horizontal",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "五百円玉"
+                    },
+                    {
+                      "type": "text",
+                      "text": "茶色"
+                    },
+                    {
+                      "type": "text",
+                      "text": "牡羊座"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "styles": {
+          "header": {
+            "separator": true
+          }
+        }
+      },
+      {
+        "type": "bubble",
+        "header": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "当番",
+              "align": "center",
+              "color": "#ffffff",
+              "weight": "bold",
+              "size": "xxl"
+            }
+          ],
+          "backgroundColor": "#ff0f33"
+        },
+        "hero": {
+          "type": "image",
+          "url": "https://2.bp.blogspot.com/-SN24R4K0Omo/VtoffvSKf0I/AAAAAAAA4X0/AU8wIcv_4IU/s800/gomi_mark01_moeru.png",
+          "size": "full",
+          "aspectRatio": "20:13",
+          "action": {
+            "type": "postback",
+            "label": "action",
+            "data": "hello"
+          },
+          "margin": "none",
+          "align": "center"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "燃えるゴミの日",
+              "weight": "bold",
+              "size": "xl",
+              "color": "#bcb1b3"
+            },
+            {
+              "type": "text",
+              "text": "タンロン"
+            },
+            {
+              "type": "text",
+              "text": "今週の掃除当番",
+              "weight": "bold",
+              "size": "xl",
+              "margin": "xxl",
+              "color": "#034596"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "margin": "lg",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "リビング:",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 4,
+                      "wrap": true
+                    },
+                    {
+                      "type": "text",
+                      "text": "Jamieさん",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "廊下1階2階、階段:",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 4,
+                      "wrap": true
+                    },
+                    {
+                      "type": "text",
+                      "text": "キリさん",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "玄関:",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 4,
+                      "wrap": true
+                    },
+                    {
+                      "type": "text",
+                      "text": "グェンさん",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "キッチン:",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 4,
+                      "wrap": true
+                    },
+                    {
+                      "type": "text",
+                      "text": "タンロンさん",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "お風呂、脱衣所:",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 4,
+                      "wrap": true
+                    },
+                    {
+                      "type": "text",
+                      "text": "マキさん",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "お休み1:",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 4,
+                      "wrap": true
+                    },
+                    {
+                      "type": "text",
+                      "text": "エリさん",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "お休み2:",
+                      "color": "#aaaaaa",
+                      "size": "sm",
+                      "flex": 4,
+                      "wrap": true
+                    },
+                    {
+                      "type": "text",
+                      "text": "Gautamさん",
+                      "wrap": true,
+                      "color": "#666666",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "styles": {
+          "header": {
+            "separator": true
+          }
+        }
+      }
+    ]
+  }
+
+
+
+  
