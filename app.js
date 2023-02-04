@@ -171,7 +171,7 @@ async function getWeather() {
     (a) => a.area.code === '82182'
   );
   var text = '';
-  var code = JSON.parse(fs.readFileSync('weathercode.json', 'utf8'));
+  var code = JSON.parse(fs.readFileSync('weather-code.json', 'utf8'));
   text += weather.area.name + ':' + code[weather.weatherCodes[0]][3] + '\n';
   text += '天気:' + weather.weathers[0] + '\n';
   text +=
