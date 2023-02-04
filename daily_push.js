@@ -16,7 +16,7 @@ const config_gg = {
 
 
 
-cron.schedule('* 58 1 * * *', () => {
+cron.schedule('0 3 2 * * *', () => {
   //daily();
   test();
 }, {
