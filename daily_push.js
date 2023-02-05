@@ -16,15 +16,15 @@ const config_gg = {
 
 
 
-cron.schedule('0 20 15 * * *', () => {
-  daily();
-}, {
-  scheduled: true,
-  timezone: "Asia/Tokyo"
-});
+// cron.schedule('0 20 15 * * *', () => {
+//   daily();
+// }, {
+//   scheduled: true,
+//   timezone: "Asia/Tokyo"
+// });
+daily();
 
-
-
+//C299cd100dc3f817efd28d6abf959d368
 async function daily() {
   const client = new line.Client(config_line);
 
