@@ -368,6 +368,74 @@ async function daily() {
             contents: [
               {
                 type: 'text',
+                text: '当番',
+                align: 'center',
+                color: '#ffffff',
+                weight: 'bold',
+                size: 'xxl',
+              },
+            ],
+            backgroundColor: '#' + duty_color,
+          },
+          hero: {
+            type: 'image',
+            url: duty_BG,
+            size: 'full',
+            aspectRatio: '20:13',
+            action: {
+              type: 'postback',
+              label: 'action',
+              data: 'hello',
+            },
+            margin: 'none',
+            align: 'center',
+          },
+          body: {
+            type: 'box',
+            layout: 'vertical',
+            contents: [
+              {
+                type: 'text',
+                text: trash_day,
+                weight: 'bold',
+                size: 'xl',
+                color: '#bcb1b3',
+              },
+              {
+                type: 'text',
+                text: trash_human,
+              },
+              {
+                type: 'text',
+                text: '今週の掃除当番',
+                weight: 'bold',
+                size: 'xl',
+                margin: 'xxl',
+                color: '#034596',
+              },
+              {
+                type: 'box',
+                layout: 'vertical',
+                margin: 'lg',
+                spacing: 'sm',
+                contents: clean,
+              },
+            ],
+          },
+          styles: {
+            header: {
+              separator: true,
+            },
+          },
+        },
+        {
+          type: 'bubble',
+          header: {
+            type: 'box',
+            layout: 'vertical',
+            contents: [
+              {
+                type: 'text',
                 text: '今日の運勢',
                 align: 'center',
                 size: 'xxl',
@@ -604,74 +672,6 @@ async function daily() {
                     ],
                   },
                 ],
-              },
-            ],
-          },
-          styles: {
-            header: {
-              separator: true,
-            },
-          },
-        },
-        {
-          type: 'bubble',
-          header: {
-            type: 'box',
-            layout: 'vertical',
-            contents: [
-              {
-                type: 'text',
-                text: '当番',
-                align: 'center',
-                color: '#ffffff',
-                weight: 'bold',
-                size: 'xxl',
-              },
-            ],
-            backgroundColor: '#' + duty_color,
-          },
-          hero: {
-            type: 'image',
-            url: duty_BG,
-            size: 'full',
-            aspectRatio: '20:13',
-            action: {
-              type: 'postback',
-              label: 'action',
-              data: 'hello',
-            },
-            margin: 'none',
-            align: 'center',
-          },
-          body: {
-            type: 'box',
-            layout: 'vertical',
-            contents: [
-              {
-                type: 'text',
-                text: trash_day,
-                weight: 'bold',
-                size: 'xl',
-                color: '#bcb1b3',
-              },
-              {
-                type: 'text',
-                text: trash_human,
-              },
-              {
-                type: 'text',
-                text: '今週の掃除当番',
-                weight: 'bold',
-                size: 'xl',
-                margin: 'xxl',
-                color: '#034596',
-              },
-              {
-                type: 'box',
-                layout: 'vertical',
-                margin: 'lg',
-                spacing: 'sm',
-                contents: clean,
               },
             ],
           },
