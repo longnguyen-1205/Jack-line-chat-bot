@@ -132,8 +132,13 @@ async function daily() {
     } else {
       var year_d = year;
     }
-    if (d - new Date(year_d, month_d - 1, date_d) < 0) {
+    if (d - new Date(year_d, month_d - 1, date_d) < 0 ) {
       clean_day = i - 1;
+      break;
+    }
+
+    if (i== headers.length -1 && d - new Date(year_d, month_d - 1, date_d) < 604800000 ) {
+      clean_day = i;
       break;
     }
   }
