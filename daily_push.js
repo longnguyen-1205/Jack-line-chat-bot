@@ -53,7 +53,13 @@ async function daily() {
   var day = d.getDay();
   var j_day = ['日', '月', '火', '水', '木', '金', '土'];
   var daily = month + '月' + date + '日';
-
+  var firstDay = new Date(d.getFullYear(), d.getMonth(), 1);
+  var sencond_sat = new Date();
+  sencond_sat.setDate(14-firstDay.getDay());
+  var fourth_sun = new Date();
+  fourth_sun.setDate(29-firstDay.getDay());
+  var sencond_sun = new Date();
+  sencond_sun.setDate(15-firstDay.getDay());
   //fate
   url = `http://api.jugemkey.jp/api/horoscope/free/${year}/${month}/${date}`;
 
@@ -111,10 +117,28 @@ async function daily() {
       }
     }
   });
-  if (trash_day.search('える') > -1) {
+  if (day == 1 || day == 4) {
     duty_color = 'ff0f33';
     duty_BG =
       'https://storage.googleapis.com/line-chatbot-375411.appspot.com/weather-img/moeru.png';
+  }
+  if (date == fourth_sun.getDate()) {
+    trash_day　= '燃えないゴミの日'
+    duty_color = 'c683d3';
+    duty_BG =
+      'https://storage.googleapis.com/line-chatbot-375411.appspot.com/weather-img/moenai.png';
+  }
+  if (date == sencond_sun.getDate()) {
+    trash_day　= 'ペットボトルゴミの日'
+    duty_color = '1fe5ef';
+    duty_BG =
+      'https://storage.googleapis.com/line-chatbot-375411.appspot.com/weather-img/petbottle.png';
+  }
+  if ( date == sencond_sat.getDate()) {
+    trash_day　= 'ダンボールの日'
+    duty_color = 'f2c41f';
+    duty_BG =
+      'https://storage.googleapis.com/line-chatbot-375411.appspot.com/weather-img/danborl.jpg';
   }
 
   // cleaning_dutty
