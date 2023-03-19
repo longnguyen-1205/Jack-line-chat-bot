@@ -167,15 +167,16 @@ async function getWeather() {
   let weather = JSON.parse(body)[0].timeSeries[0].areas.find(
     (a) => a.area.code === '400010'
   );
-  let temperature = JSON.parse(body)[0].timeSeries[2].areas.find(
-    (a) => a.area.code === '82182'
-  );
+  // let temperature = JSON.parse(body)[0].timeSeries[2].areas.find(
+  //   (a) => a.area.code === '82182'
+  // );
+  let temperature = JSON.parse(body)[1].tempAverage.areas[0];
   var text = '';
   var code = JSON.parse(fs.readFileSync('weather-code.json', 'utf8'));
   text += weather.area.name + ':' + code[weather.weatherCodes[0]][3] + '\n';
   text += '天気:' + weather.weathers[0] + '\n';
   text +=
-    '気温(°C):' + temperature.temps[0] + '-' + temperature.temps[1] + '\n';
+    '気温(°C):' + temperature.min + '-' + temperature.max + '\n';
   text += '風:' + weather.winds[0] + '\n';
   text += '波:' + weather.waves[0] + '\n';
 
@@ -278,9 +279,9 @@ async function getWeather() {
                   {
                     type: 'text',
                     text:
-                      temperature.temps[0] +
+                      temperature.min +
                       '->' +
-                      temperature.temps[1] +
+                      temperature.max +
                       ' (°C)',
                     wrap: true,
                     color: '#666666',
