@@ -5,7 +5,7 @@ let request = require('sync-request');
 const cron = require('node-cron');
 const fs = require('fs');
 const { GoogleSpreadsheet } = require('google-spreadsheet');
-
+const translate = require('@iamtraction/google-translate');
 const config_line = {
   channelAccessToken: process.env.LINE_CHANNEL_ACCESS_TOKEN,
   channelSecret: process.env.LINE_CHANNEL_SECRET,
@@ -110,7 +110,17 @@ async function handleEvent(event) {
     const fate = await getFate();
     return client.replyMessage(event.replyToken, fate);
   }
+  translate(event.message.text, { to: 'en' }).then(res => {
+    client.replyMessage(event.replyToken, {
+      type: 'text',
+      text: res.text,
+    });
+    console.log(res.text); // OUTPUT: You are amazing!
+  }).catch(err => {
+    console.error(err);
+  });
   
+  return;
 }
 async function getClean() {
   const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEET_ID);
