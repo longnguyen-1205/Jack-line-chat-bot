@@ -136,8 +136,8 @@ async function daily() {
     duty_BG =
       'https://storage.googleapis.com/line-chatbot-375411.appspot.com/weather-img/petbottle.png';
   }
-  if ( date == sencond_sat.getDate()) {
-    trash_day　= 'ダンボールの日'
+  if ( date == sencond_sat.getDate()-1 ) {
+    trash_day　= 'ダンボールの前日'
     duty_color = 'f2c41f';
     duty_BG =
       'https://storage.googleapis.com/line-chatbot-375411.appspot.com/weather-img/danborl.jpg';
