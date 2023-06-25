@@ -119,6 +119,7 @@ async function daily() {
     }
   });
   if (day == 1 || day == 4) {
+    trash_day　= '燃えるゴミの日'
     duty_color = 'ff0f33';
     duty_BG =
       'https://storage.googleapis.com/line-chatbot-375411.appspot.com/weather-img/moeru.png';
@@ -714,10 +715,13 @@ async function daily() {
       ],
     },
   };
-  client
+  if(day == 1 || day == 4 || date == fourth_sun.getDate()|| date == sencond_sun.getDate() || (date == sencond_sat.getDate()-1 && month%2==1)){
+    client
     .pushMessage(process.env.JACK_GROUP_ID, message)
     .then(() => {})
     .catch((err) => {
       console.log(err);
     });
+  }
+  return;
 }
